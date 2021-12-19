@@ -1,0 +1,346 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+section{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+/* older need delete */
+.data-container{
+    width: 98%;
+    background-color: #f7f6f6;   
+    margin: 1rem;
+    -webkit-box-shadow: -1px 0px 18px 4px rgba(0,0,0,0.18); 
+    box-shadow: -1px 0px 18px 4px rgba(0,0,0,0.18);
+}
+.students-data{
+   padding: 1rem;
+   
+}
+.students-data .breadcrumb{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    border-bottom: .1rem solid #bdbdbd;
+    padding: 0 0 .8rem;
+    justify-content: space-between;
+}
+.students-data .breadcrumb .heading p{
+    color: #b60505;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+.students-data .breadcrumb .breadcrumb-info{
+    color: #b60505;
+    font-size: 1rem;
+    font-weight: 600;
+}
+.data-heading{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.data-heading .heading-button ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap:1rem;
+    margin: .3rem 0 0;
+    
+}
+.data-heading .heading-button ul a{
+    text-decoration: none;
+  
+}
+.data-heading .heading-button ul a:first-child{  
+    color: #fff;  
+    font-size: 1rem;
+    padding: .3rem .5rem .4rem;
+    border-radius: .2rem;
+    cursor: pointer;
+    font-size: .9rem;
+    background-color: #ff2e2e;   
+    
+}
+.data-heading .heading-button ul a:last-child{    
+    color: #fff;  
+    font-size: 1rem;
+    padding: .3rem .5rem .4rem;
+    border-radius: .2rem;
+    cursor: pointer;
+    font-size: .9rem;
+    background-color: #f76262; 
+    
+}
+.data-heading form input[type="text"]{
+    width: 13rem;
+    height: 2.2rem;
+    background-color: #babbbb;  
+    border-radius: .3rem;
+    border: none;
+    padding: .3rem .4rem .2rem;
+    font-size: 1rem;   
+    margin: .3rem 0;
+}
+.data-heading form input:focus{
+    outline: none;
+}
+
+
+ table {
+    width: 100%;
+    text-align: center;
+}
+
+ table th {
+    background-color: #d8d6d6;
+    padding: .1rem;
+    color: #5c5c5c;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+table td {
+    padding: .1rem;
+    color: #4b4b4b;
+    font-size: .9rem;
+}
+
+ table,
+th,
+td {
+    border: 1px solid #525353;
+    border-collapse: collapse;
+    padding: 0 .5rem;
+}
+
+ tr:nth-child(even) {
+    background-color: #acabab;
+}
+
+ table th:nth-child(1) {
+    width: 3%;
+}
+
+ table th:nth-child(2) {
+    width: 3.5%;
+}
+
+ table th:nth-child(3) {
+    width: 15%;
+}
+
+ table th:nth-child(4) {
+    width: 10%;
+}
+
+ table th:nth-child(5) {
+    width: 12%;
+}
+
+ table th:nth-child(6) {
+    width: 6%;
+}
+
+ table th:nth-child(7) {
+    width: 4%;
+}
+
+ table th:nth-child(8) {
+    width: 6%;
+}
+
+ table th:nth-child(9) {
+    width: 5.5%;
+}
+
+ table th:nth-child(10) {
+    width: 8%;
+}
+
+table th:nth-child(11){
+    width: 4.3%;
+}
+
+table th:nth-child(12) {
+    width: 10%;
+  
+}
+
+tr td .photo{
+    width: 2.3rem;
+    height: 2.3rem; 
+    margin: .2rem auto;
+    
+    
+   
+}
+ tr td img {
+    width: 100%;
+    height: 100%;
+  
+    border-radius: 50%;
+}
+
+.students-info tr td:nth-child(12) a {
+    text-decoration: none;
+    padding: .4rem .5rem;
+    background-color: #118AB2;
+    color: #fff;
+    cursor: pointer;
+    border-radius: .2rem;
+    margin: 0 .3rem;
+    font-size: .8rem;
+   
+}
+
+.students-info tr td:nth-child(13) a {
+    text-decoration: none;
+    padding: .4rem .6rem;
+    background-color: #DAC50C;
+    color: #fff;
+    cursor: pointer;
+    border-radius: .2rem;
+    margin: 0 .3rem;
+    font-size: .8rem;
+    
+}
+
+.students-info tr td:nth-child(14) a {
+    text-decoration: none;
+    padding: .4rem .6rem;
+    background-color: #EF476F;
+    color: #fff;
+    cursor: pointer;
+    border-radius: .2rem;
+    margin: 0 .3rem;
+    font-size: .8rem;
+}
+
+.add-btn {
+    text-decoration: none;
+    color: #dad8d8;
+    font-size: 1.1rem;
+    background-color: #0C5555;
+    border: 1px solid #949393;
+    padding: .4rem .5rem;
+    border-radius: .3rem;
+    transition: .8s;
+    margin-top: 1rem;
+    display: block;
+    width: 11rem;
+    text-align: center;
+    transition: .5s;
+}
+
+.add-btn:hover {
+    color: #fff;
+    
+}
+
+ .tooltiptext {
+    visibility: hidden;
+    color: #fff;
+    text-align: center;
+    padding: .3rem .3rem .8rem;
+    position: absolute;
+    z-index: 1;
+    top: -1.5rem;
+    left: .4rem;
+    font-size: .7rem;
+    border-radius: .2rem;
+    background-color: #EF476F;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 64% 80%, 50% 100%, 36% 80%, 0 80%);
+
+   
+}
+.view{
+    position: relative;
+    
+}
+
+.view:hover .tooltiptext {
+    visibility: visible;
+}
+
+.modal {
+    display: none; /* Hidden by default */ 
+    position: fixed;   
+    left: 50%;
+    z-index: 1;
+    top: 16rem;
+    width: 20rem;
+    border-radius: .3rem;
+    border: .3rem solid #143B64; 
+    overflow: hidden; /* Enable scroll if needed */
+    box-shadow: 0px 0px 16px 1px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 0px 16px 1px rgba(0,0,0,0.55);
+    -moz-box-shadow: 0px 0px 16px 1px rgba(0,0,0,0.55);
+   
+  }
+  
+  /* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 1rem;
+  }
+  
+  /* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    color: #b60505;
+    padding: 0 .5rem;
+    border-radius: .2rem;
+  }
+  
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+.model-content .img{
+    width: 6.5rem;
+    height: 6.5rem;
+    margin: 0 auto;
+   
+}
+.model-content .img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    text-align: center;
+}
+.model-content .name h2{
+    text-align: center;
+    font-size: 1.2rem;
+    color: hsl(0, 0%, 27%);
+}
+.model-content .class{
+    text-align: center;
+    font-size: 1rem;
+    color: #757575;
+}
+.model-content .roll, .phone, .email, .admission-date{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content:space-between;
+    border-bottom: .1rem solid #cac9c9;
+    padding: .5rem 0 .3rem;
+}

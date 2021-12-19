@@ -1,0 +1,375 @@
+<?php
+
+use App\Supports\Validate;
+use App\Controllers\TeacherController;
+
+require_once "vendor/autoload.php";
+
+$teacher= new TeacherController;
+
+
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Students Data</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/add-teachers.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+<section id="header-container">
+    <div class="header-content">
+        <div class="header-menu">
+            <div class="header-item header-info-1">
+                <div class="header-logo">                   
+                    <img src="assets/media/img/education.png" alt="" srcset="">
+                </div>
+                <div class="header-name">
+                    <h2>TOPEDGE</h2>
+                </div>
+            </div>
+            <div class="header-item header-info-2">
+                <div class="header-content-info">
+                    <div class="toggle-search">
+                        <div class="toggler">
+                            <i class="fas fa-angle-left"></i>
+                        </div>
+                        <div class="search">
+                            <form action="" method="post">
+                                <input type="text" placeholder="Search">
+                                <input type="submit" value="Search">
+                            </form>
+                        </div>
+                    </div> 
+                    <div class="header-info-right">
+                        <div class="profile-content">
+                            <div class="profile-notify">
+                                <i class="far fa-bell"></i>
+                            </div>
+                            <div class="profile-photo">
+                                <img src="assets/media/img/boy4.jpg" alt="">
+                                <div class="toggle">
+                                    <span><a href="">Profile</a></span>                                                                
+                                    <span><a href="">Inbox</a></span>                                                                
+                                    <span><a href="#">Logout</a></span>                                                                
+                                </div>
+                            </div>                           
+                        </div>
+                    </div>                   
+                </div>
+            </div>
+        </div>
+        
+        <!-- menu -->
+        <div class="nav-content-body">
+            <div class="nav-content-body-container">
+                <!-- Start menu -->
+                <div class="item menu">
+                    <div class="menu-heading">
+                        <h2>MAIN MENU</h2>
+                    </div>
+                    <div class="menu-nav">
+                        <div class="navbar">
+                            <ul class="navbar-nav">                                                  
+                                <li class="nav-item "><a class="nav-ink toggle " href=""><i class="fas fa-house-user "></i>Dashboard</a>
+                                    <ul class="inner">
+                                        <li class="inner-item"><a href="index.php">Dashboard-1</a></li>
+                                        <li class="inner-item"><a href="">Dashboard-2</a></li>
+                                        <li class="inner-item"><a href="">Dashboard-3</a></li>
+                                    </ul>                            
+                                </li>
+                                <li class="nav-item"><a class="nav-ink toggle" href=""><i class="fas fa-calendar-day"></i>Even Management</a>
+                                    <ul class="inner">
+                                        <li class="inner-item"><a href="">Yearly</a></li>                                   
+                                    </ul> 
+                            
+                                </li>
+                                <li class="nav-item"><a class="nav-ink toggle" href=""><i class="fas fa-user-tie"></i>Teachers</a>
+                                    <ul class="inner">
+                                        <li class="inner-item"><a href="teachers-data.php">All Teachers</a></li>
+                                        <li class="inner-item"><a href="add-teacher.php">Add New Teacher</a></li>
+                                        <li class="inner-item"><a href="teachers-grid-data.php">Teacher Profile</a></li>
+                                    </ul> 
+                                </li>
+                                <li class="nav-item"><a class="nav-ink toggle" href=""><i class="fas fa-user-graduate"></i>Students</a>
+                                    <ul class="inner">
+                                        <li class="inner-item"><a href="students-data.php">All Students</a></li>
+                                        <li class="inner-item"><a href="add-student.php">Add Students</a></li>
+                                        <li class="inner-item"><a href="students-grid-data.php">Students Profile</a></li>
+                                    </ul> 
+                                </li>
+                                <li class="nav-item"><a class="nav-ink toggle" href=""><i class="fas fa-users-cog"></i>Staffs</a>
+                                <ul class="inner">
+                                    <li class="inner-item"><a href="staffs-data.php">All Staffs</a></li>
+                                    <li class="inner-item"><a href="add-staff.php">Add Staff</a></li>
+                                    <li class="inner-item"><a href="">Staff Profile</a></li>
+                                </ul> 
+                                </li>
+                                <li class="nav-item"><a class="nav-ink toggle" href=""><i class="fas fa-book"></i>Courses</a>
+                                    <ul class="inner">
+                                        <li class="inner-item"><a href="">All Courses</a></li>
+                                        <li class="inner-item"><a href="">Add Course</a></li>
+                                        <li class="inner-item"><a href="">New Course</a></li>
+                                    </ul> 
+                                </li>
+                                <li class="nav-item"><a class="nav-ink toggle" href=""><i class="fas fa-book-reader"></i>Library</a>
+                                    <ul class="inner">
+                                        <li class="inner-item"><a href="">All.....</a></li>
+                                        <li class="inner-item"><a href="">Dashboard-1</a></li>
+                                        <li class="inner-item"><a href="">Dashboard-1</a></li>
+                                    </ul> 
+                                </li>
+                                <li class="nav-item"><a class="nav-ink toggle" href=""><i class="fas fa-layer-group"></i>Departments</a>
+                                    <ul class="inner">
+                                        <li class="inner-item"><a href="">All Department</a></li>
+                                        <li class="inner-item"><a href="">Add Department</a></li>                                 
+                                    </ul> 
+                                </li>
+                               
+                                <li class="nav-item"><a class="nav-ink toggle" href=""><i class="fas fa-dollar-sign"></i>Fees</a>
+                                    <ul class="inner">
+                                        <li class="inner-item"><a href="">Total Fees</a></li>
+                                        <li class="inner-item"><a href="">Add Fees</a></li>
+                                        <li class="inner-item"><a href="">Fees Receipt</a></li>
+                                    </ul> 
+                                </li>
+                             
+                                <li class="nav-item"><a class="nav-ink toggle" href=""><i class="fas fa-gift"></i>Holidays</a>
+                                    <ul class="inner">
+                                        <li class="inner-item"><a href="">Holiday Calender</a></li>
+                                        <li class="inner-item"><a href="">All Holiday</a></li>
+                                        <li class="inner-item"><a href="">Add Holiday</a></li>
+                                    </ul> 
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- End menu -->
+                <!-- Start body content -->
+
+<?php 
+if(isset($_POST['add'])){
+
+    $tname = $_POST['tname'];
+    $tcell = $_POST['tcell'];
+    $temail = $_POST['temail'];  
+    $tbirth = $_POST['tbirth'];  
+    $age = $_POST['age'];   
+    $department = $_POST['department'];   
+    $education = $_POST['education'];
+    $salary = $_POST['salary']; 
+    $join_date = $_POST['join_date']; 
+    $fname = $_POST['fname']; 
+    $mname = $_POST['mname']; 
+    $pre_address = $_POST['pre_address']; 
+    $per_address = $_POST['per_address']; 
+
+    $tgender ='';
+   
+
+    if(isset($_POST['tgender'])){
+        $tgender =$_POST['tgender'];
+   }
+    
+   
+    
+   
+
+    if(empty($tname) && empty($tcell) && empty($temail) &&empty($age) && empty($education) && empty($salary) && empty($tgender)){      
+        $msg=Validate::danger('Please complete all required fields!');
+    }elseif(Validate::emailCheck($temail)==false){
+        $msg_email=Validate::required('Required valid email number!');
+    
+    }else{
+            $msg=Validate::success('Data stable');
+            $teacher->teacherCreate($tname, $tcell, $temail, $tbirth, $age, $department, $education, $salary, $join_date, $fname, $mname, $pre_address, $per_address, $tgender);
+          
+        }
+
+
+}
+?>
+
+                <div class="item content-body">                     
+                    <div class="data-container">
+                        <div class="students-data"> 
+                            <div class="breadcrumb">
+                                <div class="heading"><p>Add Teacher</p></div>
+                                <div class="message"><p><?php echo $msg ?? '';?></p></div> 
+                                    <div class="breadcrumb-info">
+                                    <p>Home > Teachers > Add New Teacher</p>
+                                </div>
+                            </div> 
+                                                    
+                            <!--********** Student infomation table **********-->
+                            <div class="add-students">                               
+                                <form action="" method="POST" enctype="multipart/form-data" autocomplete="on">
+                                    <div class="update-container">
+                                        <div class="update-column-1">                                         
+                                            <div class="name update-item">
+                                                <label for="">Teacher Name <strong style="color:red;">*</strong></label>
+                                                <input class="border" type="text" name="tname" placeholder="Name" value="">
+                                            </div>
+
+                                            <div class="cell update-item">
+                                                <label for="">Cell Number <strong style="color:red;">*</strong></label>                                               
+                                                <input class="border" type="text" name="tcell" placeholder="Cell Number" value="">
+                                                <?php echo $msg_cell ?? '';?>
+                                            </div>
+                                            <div class="email update-item">
+                                                <label for="">Email <strong style="color:red;">*</strong></label>                                                
+                                                <input class="border" class="border" type="text" name="temail" placeholder="Email" value="">
+                                                <?php echo $msg_email ?? '';?>
+                                            </div>
+                                        </div>
+                                        <div class="update-column-2">                                           
+                                            <div class="birth update-item">
+                                                <label for="">Date of Birth</label>
+                                                <input class="border" type="text" name="tbirth" placeholder="DD/MM/YYYY" value="">
+                                            </div>                             
+
+                                            <div class="age update-item">
+                                                <label for="">Age <strong style="color:red;">*</strong></label>                                                
+                                                <input class="border" type="text" name="age" placeholder="Age" value="">
+                                                <?php echo $msg_age ?? '';?>
+                                            </div>
+                                            <div class="department update-item">
+                                                <label for="department">Department <strong style="color:red;">*</strong></label>
+                                                <select class="border" name="department" id="cars">
+                                                    <option value="">Select Subject/Department</option>
+                                                    <option value="Bengali">Bengali</option>
+                                                    <option value="English">English</option>
+                                                    <option value="Accounting">Accounting</option>
+                                                    <option value="Management">Management</option>
+                                                    <option value="Economics">Economics</option>
+                                                    <option value="Math">Math</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="update-column-3">                                        
+                                            <div class="class update-item">
+                                                <label for="">Education <strong style="color:red;">*</strong></label>
+                                                <input class="border" type="text" name="education" placeholder="Education" value="">
+                                            </div>
+                                            <div class="gender update-item">
+                                                <label>Gender <strong style="color:red;">*</strong></label>
+                                                <span class="border-gender" >
+                                                    <div class="gender-fit">
+                                                        <label for="male">Male</label>
+                                                        <input type="radio" id="male" name="tgender" value="Male">
+                                                    </div>
+                                                    <div class="gender-fit">
+                                                        <label for="female">Female</label>
+                                                        <input type="radio" id="female" name="tgender" value="Female">
+                                                    </div>
+                                                </span>
+                                            </div>
+                                            <div class="fee update-item">
+                                                <label for="">Salary</label>
+                                                <input class="border" type="text" name="salary" placeholder="Salary" value="">
+                                            </div>
+                                        </div>
+                                        <div class="update-column-4">
+                                            <div class="joining_date update-item">
+                                                <label for="">Joining Date <strong style="color:red;">*</strong></label>
+                                                <input class="border" type="text" name="join_date" placeholder="DD/MM/YYYY" value="">
+                                            </div>
+                                            <div class="parents-name update-item">
+                                                <label for="">Father's Name <strong style="color:red;">*</strong></label>
+                                                <input class="border" type="text" name="fname" placeholder="Father's Name" value="">
+                                            </div>
+                                            <div class="parents-name update-item">
+                                                <label for="">Mother's Name <strong style="color:red;">*</strong></label>
+                                                <input class="border" type="text" name="mname" placeholder="Mother's Name" value="">
+                                            </div>                                           
+                                                                                  
+                                        </div>                                       
+                                        <div class="address">                                        
+                                            <div class="present-address">
+                                            <label for="">Present Address <strong style="color:red;">*</strong></label>
+                                                <textarea class="border" name="pre_address" id=""></textarea>
+                                            </div>
+                                            <div class="permenent_address">
+                                            <label for="">Permenent Address</label>
+                                                <textarea class="border" name="per_address" id=""></textarea>
+                                            </div>
+                                        </div>                                        
+                                    </div> 
+                                     <div class="photo">  
+                                        <input type="file" name="tphoto" id="file_upload" style="display: none;"><br>
+                                        <label for="file_upload"> <i class="fas fa-camera" id="file_upload"></i>                                        
+                                        </label>
+                                    </div>
+                                    <div class="Update">
+                                        <div class="submit">
+                                            <input type="submit" name="add"  value="Add Student">
+                                        </div>
+                                        <div class="cancel">
+                                            <a href="teachers-data.php">Cancel</a>
+                                        </div>                                          
+                                                     
+                                    </div>                            
+                                </form>                             
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End body content -->
+            </div>
+        </div> 
+    </div>
+</section>
+
+
+
+
+
+
+<script src="assets/js/myscript.js"></script>
+<script src="assets/js/jquery-3.6.min.js"></script>
+
+    <script>
+    $('.toggle').click(function(e) {
+    e.preventDefault();
+  
+    var $this = $(this);
+  
+    if ($this.next().hasClass('show')) {
+        $this.next().removeClass('show');
+        $this.next().slideUp(350);
+    } else {
+        $this.parent().parent().find('li .inner').removeClass('show');
+        $this.parent().parent().find('li .inner').slideUp(350);
+        $this.next().toggleClass('show');
+        $this.next().slideToggle(350);
+    }
+});
+// icon rotated
+
+// $('.toggle').on('click', function() {
+//     if ($(this).hasClass('rotate-90')) {
+//         $(this).removeClass('rotate-90');
+        
+//     } else {
+//       $(this).addClass('rotate-90');
+ 
+//     }
+//   });
+
+$(document).ready(function(){
+$(".profile-photo img").click(function(){
+    $(this).siblings(".toggle").slideToggle(50);
+});
+
+});
+</script>
+
+</body>
+
+</html>

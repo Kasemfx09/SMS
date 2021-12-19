@@ -1,0 +1,19 @@
+{
+    "name": "kasemfx09/crud-oop",
+    "description": "School management system developement",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Md Abul Kasem",
+            "email": "kasemfx18@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    }
+}

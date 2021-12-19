@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+section{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+/* older need delete */
+.data-container{
+    width: 98%;
+    background-color: #f7f6f6;   
+    margin: 1rem;
+    -webkit-box-shadow: -1px 0px 18px 4px rgba(0,0,0,0.18); 
+    box-shadow: -1px 0px 18px 4px rgba(0,0,0,0.18);
+}
+.students-data{
+   padding: 1rem;
+   
+}
+.students-data .breadcrumb{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    /* border-bottom: .1rem solid #bdbdbd;
+    padding: 0 0 .8rem; */
+    justify-content: space-between;
+}
+.students-data .breadcrumb .heading p{
+    color: #b60505;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+.students-data .breadcrumb .breadcrumb-info{
+    color: #b60505;
+    font-size: 1rem;
+    font-weight: 600;
+}
+/* single student data */
+.single-student-content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 1rem;
+    margin: 0 1rem;
+    -webkit-box-shadow: -1px 0px 18px 4px rgba(0,0,0,0.18); 
+    box-shadow: -1px 0px 18px 4px rgba(0,0,0,0.18);
+
+}
+.single-student-content .single-student-info-1{
+    flex-basis: 25%;
+    background-color: #f7f6f6; 
+
+}
+.single-student-content .single-student-info-2{
+    flex-basis: 75%;
+    background-color:#f7f6f6; 
+    padding: 1rem;
+
+}
+.profile-view-photo{
+    background-color: #EF476F;
+    width: 100%;
+    text-align: center;
+    padding: 1rem ;
+}
+.profile-view-photo img{
+    width: 9rem;
+    height: 9rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.profile-view-photo h2{
+    color: #fff;
+    font-size: 1.2rem;
+}
+.single-student-details{
+    padding: 1rem;
+}
+.single-student-info-2 .heading{
+    border-bottom: .1rem solid #bdbdbd;
+    width: 100%;
+   
+}
+.single-student-info-2 .heading p{
+    color: crimson;
+    font-size: 1.2rem;
+    padding-bottom: .5rem;
+}
+.personal-info h3{
+    padding: 1rem 0 0;
+    color: #6b3a44;
+    
+}
+.personal-info .border{
+    background-color: #f391a8;
+    width: 11.5rem;
+    height: .1rem;
+    display: block;
+    
+}
+.single-student-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: .6rem;
+   
+}
+.single-student-details p{
+    border-bottom: .1rem solid #e3e3e3;
+    padding-bottom: .6rem;
+}
+.single-student-details p span{
+    float: right;
+}
+.personal-details .fname{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: 45%;
+    
+}
+.personal-details .fname .item{
+    
+    padding-bottom: 1rem;
+}
+.personal-details .fname .item:nth-child(1){
+    width: 45%;
+}
+.personal-details .fname .item:nth-child(2){
+    width: 10%;
+    
+}
+.personal-details .fname .item:nth-child(3){
+    width: 45%;
+}
+
+
+
+
+

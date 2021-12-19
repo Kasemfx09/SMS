@@ -1,0 +1,216 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+section{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+/* older need delete */
+.data-container{
+    width: 98%;
+    background-color: #f7f6f6;   
+    margin: 1rem;
+    -webkit-box-shadow: -1px 0px 18px 4px rgba(0,0,0,0.18); 
+    box-shadow: -1px 0px 18px 4px rgba(0,0,0,0.18);
+}
+.students-data{
+   padding: 1rem 1rem .2rem;
+   
+}
+.students-data .breadcrumb{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    border-bottom: .1rem solid #bdbdbd;
+    padding: 0 0 .8rem;
+    justify-content: space-between;
+}
+.students-data .breadcrumb .heading p{
+    color: #b60505;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+.students-data .breadcrumb .breadcrumb-info{
+    color: #b60505;
+    font-size: 1rem;
+    font-weight: 600;
+}
+.data-heading{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.data-heading .heading-button ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap:1rem;
+    margin: .3rem 0 0;
+    
+}
+
+.data-heading .heading-button ul  a{
+    text-decoration: none;
+  
+}
+.data-heading .heading-button ul a:first-child{  
+    color: #fff;  
+    font-size: 1rem;
+    padding: .3rem .5rem .4rem;
+    border-radius: .2rem;
+    cursor: pointer;
+    font-size: .9rem;
+    background-color: #f76262; 
+      
+    
+}
+.data-heading .heading-button ul a:last-child{    
+    color: #fff;  
+    font-size: 1rem;
+    padding: .3rem .5rem .4rem;
+    border-radius: .2rem;
+    cursor: pointer;
+    font-size: .9rem;
+    background-color: #ff2e2e; 
+    
+    
+}
+.data-heading form input[type="text"]{
+    width: 13rem;
+    height: 2.2rem;
+    background-color: #babbbb;  
+    border-radius: .3rem;
+    border: none;
+    padding: .3rem .4rem .2rem;
+    font-size: 1rem;   
+    margin: .3rem 0;
+}
+.data-heading form input:focus{
+    outline: none;
+}
+/* Grid details */
+.student-grid-view{
+    background-color: #f7f6f6;   
+    margin: 1rem;
+    -webkit-box-shadow: -1px 0px 18px 4px rgba(0,0,0,0.18); 
+    box-shadow: -1px 0px 18px 4px rgba(0,0,0,0.18);   
+    width:98% ;
+}
+.student-grid-view .grid-content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: .5rem;
+    width: 100%;
+    justify-content: center;
+}
+.student-grid-view .grid-content .grid-info{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: .5rem;
+    flex-basis: 16rem;
+    padding: .7rem .5rem .5rem;
+    background-color: #052D58; 
+    position: relative;
+}
+.student-grid-view .grid-content .grid-info .edit-delete .fas{
+    float: right;    
+    cursor: pointer;
+    color: #143B64;
+    transition: .5s;
+    padding: .1rem .3rem;
+    border-radius: .8rem;
+    border: 2px solid #FA8072;
+   
+    
+}
+.student-grid-view .grid-content .grid-info .edit-delete .fas:hover{
+    color: #fff;
+    border: 2px solid #fff;
+  
+   
+
+}
+.student-grid-view .grid-content .grid-info .edit-delete .edit-delete-toggle{
+    background-color: #fff;
+    z-index: 999;
+    padding: .3rem;
+    width: 35%;
+    border-radius: .4rem;
+    float: right;
+    /* margin: .6rem -.8rem 0 0; */
+    display: none;
+    position: absolute;
+    right: 1rem;
+    top: 2.2rem;
+
+}
+.student-grid-view .grid-content .grid-info .edit-delete .edit-delete-toggle a{
+    text-decoration: none;
+    display: block;
+    font-size: .8rem;
+    color: #f76262;
+    padding: .2rem;
+}
+.student-grid-view .grid-content .grid-info .edit-delete .edit-delete-toggle a:first-child{
+    color: #000;
+}
+.student-grid-view .grid-content .grid-info .edit-delete .edit-delete-toggle a:hover{
+  background-color: #f1f1f1;
+  border-bottom: .1rem solid red;
+}
+
+.student-grid-view .grid-content .grid-info .grid-photo{    
+    text-align: center;
+}
+.student-grid-view .grid-content .grid-info .grid-info-container{    
+    background-color: #fd8d80;
+    padding: .5rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    color: #463535;
+}
+.student-grid-view .grid-content .grid-info .grid-photo img{
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%; 
+    object-fit: cover;
+
+}
+.student-grid-view .grid-content .grid-info .grid-photo .name h2{
+    font-size: 1.1rem;
+    color: #fffbfb;
+}
+.student-grid-view .grid-content .grid-info .grid-info-container .btn{
+    text-align: center;
+    margin: .5rem 0;
+}
+.student-grid-view .grid-content .grid-info .grid-info-container .btn a{     
+    text-decoration: none;
+    color: #fff;
+    padding: .3rem .8rem;
+    text-align: center;
+    border-radius: 1rem;
+    border: .1rem solid #fff;
+    transition: .5s;
+
+}
+.student-grid-view .grid-content .grid-info .grid-info-container .btn a:hover{
+    color: #143B64;
+    background-color: #fd8d80;
+}
+
+
+

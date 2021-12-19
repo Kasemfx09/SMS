@@ -1,0 +1,207 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+section{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+/* older need delete */
+.data-container{
+    width: 98%;
+    background-color: #f7f6f6;   
+    margin: 1rem;
+    -webkit-box-shadow: -1px 0px 18px 4px rgba(0,0,0,0.18); 
+    box-shadow: -1px 0px 18px 4px rgba(0,0,0,0.18);
+}
+.students-data{
+   padding: 1rem;
+   
+}
+.students-data .breadcrumb{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    border-bottom: .1rem solid #bdbdbd;
+    padding: 0 0 .8rem;
+    justify-content: space-between;
+    margin-bottom: .3rem;
+}
+.students-data .breadcrumb .heading p{
+    color: #b60505;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+.students-data .breadcrumb .breadcrumb-info{
+    color: #b60505;
+    font-size: 1rem;
+    font-weight: 600;
+}
+.data-heading{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.data-heading .heading-button ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap:1rem;
+    margin: .3rem 0;
+}
+.data-heading .heading-button ul li{
+    list-style: none;
+    color: #fff;
+    padding: .4rem .5rem;
+    border-radius: .2rem;
+    cursor: pointer;
+    font-size: .9rem;
+}
+.data-heading .heading-button ul li:first-child{    
+    background-color: #ff2e2e;   
+}
+.data-heading .heading-button ul li:last-child{    
+    background-color: #f76262;   
+}
+/* Student update  */
+.add-students form .update-container .update-column-1, .update-column-2, .update-column-3, .update-column-4, .update-column-5{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 1rem;
+   
+}
+
+.add-students form .update-container input{
+    width: 100%;
+    padding: .5rem;
+    margin-top: .2rem;
+    font-size: 1rem;
+    color: #525151;
+}
+.add-students form .update-container label{
+   font-size: 1rem;
+}
+.add-students form .update-container textarea, input, select:focus{
+    outline: none;
+}
+.department select{
+    width: 100%;
+    height: 2.3rem;
+    margin-top: .2rem;
+    font-size: .9rem;
+   color: #525151;
+}
+.add-students form .update-container .update-item{
+    flex-basis:33.33%;
+    margin: .3rem 0;
+
+}
+
+.add-students form .update-container .address{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;   
+    gap: 1rem;
+    width: 100%;
+
+}
+.add-students form .update-container .address .present-address{
+    flex-basis: 50%;
+}
+.add-students form .update-container .address .permenent_address{
+    flex-basis: 50%;
+}
+.add-students form .update-container .address textarea{
+    width: 100%;
+    min-height: 3rem;
+    padding: .3rem;
+    font-size: 1rem;
+    margin-top: .2rem;
+}
+
+.add-students form .update-container .border{
+    border: .1rem solid #056a99; 
+    border-radius: .3rem;
+   
+}
+.add-students form .update-container input[type="radio"]{
+    width: 45%;
+    margin: .6rem;    
+    font-size: 1rem;
+    color: #525151;
+    padding: 0 .5rem;
+    cursor: pointer;
+}
+.add-students form .update-container .border-gender{
+    border: .1rem solid #056a99; 
+    border-radius: .3rem;
+    margin-top: .3rem;  
+}
+.add-students form .update-container .update-column-3 .gender .border-gender{ 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 1rem;
+    justify-content: space-around;
+}
+.gender-fit{    
+    flex-basis:50%;
+    text-align: right;
+}
+.photo .fas{
+    font-size: 2.5rem;
+    color: #EF476F;
+    margin: -.5rem 0 .8rem;
+    cursor: pointer;
+}
+.Update{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 1rem;
+    
+}
+.Update input{
+    background-color: #143B64;
+    padding: .4rem 1rem;
+    color: #fff;
+    font-size: .9rem;
+    border: .2rem  solid #EF476F;
+    border-radius: .3rem;
+    cursor: pointer;   
+}
+.Update a{
+    display: inline-block;
+    text-decoration: none;
+    background-color: #143B64;
+    padding: 4px 16px;
+    color: #fff;
+    font-size: 1rem;
+    border: .2rem  solid #EF476F;
+    border-radius: .3rem;
+    cursor: pointer;
+    transition: .5s;
+}
+.Update a:hover{
+    border: .2rem  solid #143B64;
+    background-color: #EF476F;
+}
+.photo img{
+    width: 7rem;
+    height: 7rem;
+    object-fit: cover;
+    margin: .3rem 0 .5rem;
+}
+
+
+
